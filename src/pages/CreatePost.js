@@ -22,6 +22,8 @@ function CreatePost({ isAuth }) {
     if (!isAuth){
       navigate("/login");
     }
+    else
+     return
   },[]);   
 
 
