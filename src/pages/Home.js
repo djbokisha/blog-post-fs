@@ -14,7 +14,9 @@ function Home({ isAuth }) {
       setPostList(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
     };
     getPosts();
-  },[]);
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const deletePost = async (id) => {
     const postDoc = doc(db, "posts", id);
