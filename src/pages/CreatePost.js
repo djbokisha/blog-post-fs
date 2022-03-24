@@ -18,13 +18,13 @@ function CreatePost({ isAuth }) {
      navigate("/");
   };
 
-  useEffect (() => {
-    if (!isAuth){
-      navigate("/login");
-    }
-    else
-     return
-  },[]);   
+  // useEffect (() => {
+  //   if (!isAuth){
+  //     navigate("/login");
+  //   }
+  //   else
+  //    return
+  // },[]);   
 
 
   return (
